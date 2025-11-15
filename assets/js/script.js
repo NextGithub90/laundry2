@@ -372,6 +372,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // WhatsApp floating button (bottom-left)
+  const whatsappFab = document.getElementById('whatsapp-fab');
+  if (whatsappFab) {
+    const message = compose('contact-form');
+    whatsappFab.addEventListener('click', () => openWhatsApp(message));
+    whatsappFab.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openWhatsApp(message);
+      }
+    });
+  }
+
   // Product Buy buttons
   document.querySelectorAll('.product-card .btn.btn-primary').forEach(btn => {
     btn.addEventListener('click', (e) => {

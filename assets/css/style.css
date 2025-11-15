@@ -388,3 +388,42 @@ footer {
     display: none;
   }
 }
+
+/* WhatsApp Floating Button */
+.whatsapp-fab {
+  position: fixed;
+  right: 16px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 9999px;
+  background: #25D366; /* WhatsApp green */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.35);
+  cursor: pointer;
+  z-index: 1050;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  animation: wa-wiggle 4s ease-in-out infinite;
+}
+.whatsapp-fab:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 12px 24px rgba(37,211,102,0.45); }
+.whatsapp-fab:active { transform: translateY(0) scale(0.98); }
+.whatsapp-fab svg { display: block; }
+
+@keyframes wa-wiggle {
+  0%, 88%, 100% { transform: translateY(0) rotate(0deg); }
+  92% { transform: translateY(-2px) rotate(-2deg); }
+  96% { transform: translateY(0) rotate(2deg); }
+  98% { transform: translateY(-1px) rotate(-1deg); }
+}
+
+@media (max-width: 576px) {
+  .whatsapp-fab { right: 12px; bottom: 14px; width: 52px; height: 52px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-fab { animation: none; transition: none; }
+}
