@@ -1,0 +1,390 @@
+:root {
+  --blue-500: #7ed9e3;
+  --green-300: #cbe8b6;
+  --white: #ffffff;
+  --text-900: #1f2937;
+  --text-600: #4b5563;
+  --primary-700: #1d9fb6;
+  /* Hover accent (modern blue), adjustable if needed */
+  --hover-accent: #3498db;
+  --hover-accent-rgb: 52, 152, 219;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", "Inter", "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text-900);
+  background-color: var(--white);
+}
+
+/* Spacing utilities */
+.pt-6 {
+  padding-top: 6.5rem;
+}
+.section-padding {
+  padding: 4rem 0;
+}
+
+/* Navbar */
+.navbar-brand {
+  color: var(--text-900);
+}
+.navbar-logo {
+  height: 54px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 767.98px) {
+  .navbar-logo {
+    height: 52px;
+  }
+  .bu {
+    width: 100%;
+  }
+}
+.navbar .btn-outline-primary {
+  border-color: var(--blue-500);
+  color: var(--text-900);
+}
+.navbar .btn-outline-primary:hover {
+  background-color: var(--blue-500);
+}
+
+/* Hero */
+.hero-section {
+  background: linear-gradient(180deg, rgba(126, 217, 227, 0.18) 0%, rgba(203, 232, 182, 0.18) 100%);
+}
+.hero-image {
+  object-fit: cover;
+}
+.hero-image-wrap {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.hero-image-wrap img {
+  transform: scale(1.02);
+  transition: transform 0.6s ease;
+}
+.hero-image-wrap:hover img {
+  transform: scale(1.06);
+}
+
+/* Section titles */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+/* Feature cards */
+.feature-card {
+  border: 1px solid #eef2f7;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.06);
+}
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-300);
+  color: var(--text-900);
+  margin-bottom: 0.75rem;
+}
+.feature-card .card-title {
+  font-weight: 600;
+}
+.feature-card .card-text {
+  color: var(--text-600);
+}
+
+/* Steps */
+.step-card {
+  border: 1px dashed rgba(29, 159, 182, 0.3);
+  border-radius: 1rem;
+  background: #f8fafc;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.18s ease, border-color 0.25s ease, color 0.25s ease;
+}
+.step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-500);
+  color: var(--text-900);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.step-icon {
+  font-size: 1.4rem;
+  color: var(--primary-700);
+  margin-bottom: 0.5rem;
+}
+.step-text {
+  color: var(--text-600);
+  font-weight: 500;
+}
+
+@media (hover: hover) {
+  .step-card:hover {
+    background: linear-gradient(0deg, rgba(var(--hover-accent-rgb), 0.08), rgba(var(--hover-accent-rgb), 0.08));
+    border-color: rgba(var(--hover-accent-rgb), 0.35);
+    box-shadow: 0 12px 36px rgba(31, 41, 55, 0.12);
+    transform: translateY(-2px);
+  }
+  .step-card:hover .step-icon {
+    color: var(--hover-accent);
+  }
+  .step-card:hover .step-text {
+    color: var(--text-900);
+  }
+  .step-card:hover .step-number {
+    box-shadow: 0 0 0 3px rgba(var(--hover-accent-rgb), 0.25);
+  }
+}
+.step-card:focus-within {
+  background: linear-gradient(0deg, rgba(var(--hover-accent-rgb), 0.08), rgba(var(--hover-accent-rgb), 0.08));
+  border-color: rgba(var(--hover-accent-rgb), 0.35);
+  box-shadow: 0 0 0 3px rgba(var(--hover-accent-rgb), 0.25);
+}
+
+/* Story */
+.story-section {
+  background: linear-gradient(180deg, rgba(203, 232, 182, 0.16) 0%, rgba(126, 217, 227, 0.16) 100%);
+  border-top: 1px solid #eef2f7;
+  border-bottom: 1px solid #eef2f7;
+}
+
+/* About */
+.about-quote {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-900);
+}
+.about-light {
+  color: var(--text-600);
+  font-weight: 600;
+}
+
+/* Products */
+.product-card {
+  border: 1px solid #eef2f7;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(31, 41, 55, 0.08);
+}
+.product-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+.badge-free {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--blue-500);
+  color: var(--text-900);
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  font-weight: 600;
+}
+.price {
+  font-weight: 700;
+  color: var(--text-900);
+}
+.product-card .btn-primary {
+  background-color: var(--primary-700);
+  border-color: var(--primary-700);
+}
+
+/* Locations */
+.location-list .list-group-item {
+  background: #fff;
+  border-color: #eef2f7;
+}
+
+/* Partners */
+.partner-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #eef2f7;
+}
+.partner-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Blog */
+.category {
+  background: var(--blue-500);
+  color: var(--text-900);
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+}
+.blog-card {
+  border: 1px solid #eef2f7;
+  border-radius: 1rem;
+  box-shadow: 0 10px 28px rgba(31, 41, 55, 0.06);
+}
+.blog-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  color: var(--text-600);
+}
+
+/* Sticky CTA */
+
+/* Universal Card Hover Effects */
+.card {
+  transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.18s ease, border-color 0.25s ease, color 0.25s ease;
+  will-change: transform, box-shadow, background-color, border-color;
+}
+@media (hover: hover) {
+  .card:hover {
+    background: linear-gradient(0deg, rgba(var(--hover-accent-rgb), 0.08), rgba(var(--hover-accent-rgb), 0.08));
+    border-color: rgba(var(--hover-accent-rgb), 0.3);
+    box-shadow: 0 14px 40px rgba(31, 41, 55, 0.12);
+    transform: translateY(-2px);
+  }
+}
+/* Keyboard focus should mirror hover for accessibility */
+.card:focus-within {
+  background: linear-gradient(0deg, rgba(var(--hover-accent-rgb), 0.08), rgba(var(--hover-accent-rgb), 0.08));
+  border-color: rgba(var(--hover-accent-rgb), 0.3);
+  box-shadow: 0 0 0 3px rgba(var(--hover-accent-rgb), 0.25);
+}
+/* Ensure text remains readable on hover */
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .price,
+.card:focus-within .card-title,
+.card:focus-within .card-text,
+.card:focus-within .price {
+  color: var(--text-900);
+}
+
+/* Mobile layout refinements */
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 2.5rem 0;
+  }
+  .section-title {
+    font-size: 1.375rem;
+  }
+
+  /* Hero image: reduce aggressive scaling on mobile */
+  .hero-image-wrap img {
+    transform: scale(1.01);
+  }
+
+  /* Center feature cards and tighten spacing */
+  .feature-card {
+    text-align: center;
+  }
+  .feature-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Steps: compact spacing */
+  .step-card {
+    padding: 1rem !important;
+  }
+
+  /* Product, partner, blog images: reduce height for better flow */
+  .product-card .card-img-top {
+    height: 170px;
+  }
+  .partner-card .card-img-top {
+    height: 170px;
+  }
+  .blog-card .card-img-top {
+    height: 160px;
+  }
+
+  /* Card body padding slightly tighter */
+  .card .card-body {
+    padding: 0.9rem;
+  }
+
+  /* About text size adjustments */
+  .about-quote {
+    font-size: 1rem;
+  }
+  .about-light {
+    font-size: 0.95rem;
+  }
+
+  /* Location list readability */
+  .location-list .list-group-item {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Extra compact for very small screens */
+  .section-padding {
+    padding: 2rem 0;
+  }
+  .product-card .card-img-top,
+  .partner-card .card-img-top {
+    height: 160px;
+  }
+}
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid #eef2f7;
+}
+.sticky-cta .btn {
+  font-weight: 600;
+}
+
+/* Buttons & accents */
+.btn-primary {
+  background-color: var(--primary-700);
+  border-color: var(--primary-700);
+}
+.btn-outline-primary {
+  border-color: var(--primary-700);
+  color: var(--primary-700);
+}
+.btn-outline-primary:hover {
+  background-color: var(--blue-500);
+  border-color: var(--blue-500);
+  color: var(--text-900);
+}
+
+/* Contact */
+.contact-card {
+  border: 1px solid #eef2f7;
+  border-radius: 1rem;
+  box-shadow: 0 10px 28px rgba(31, 41, 55, 0.06);
+  background: #fff;
+}
+.btn-success {
+  background-color: #22c55e;
+  border-color: #22c55e;
+}
+
+/* Responsive tweaks */
+@media (min-width: 992px) {
+  .sticky-cta {
+    display: none;
+  }
+}
