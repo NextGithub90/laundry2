@@ -22,6 +22,40 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial normalization
   normalizeAOSAnimations();
 
+  // Enable touch-as-hover effect on mobile for cards
+  const enableTouchHover = () => {
+    const addActive = (el) => {
+      if (!el) return;
+      el.classList.add('is-touch-active');
+    };
+    const removeActive = (el) => {
+      if (!el) return;
+      el.classList.remove('is-touch-active');
+    };
+    const findCard = (target) => target.closest('.card') || target.closest('.step-card');
+
+    ['touchstart'].forEach(evt => {
+      document.body.addEventListener(evt, (e) => {
+        const card = findCard(e.target);
+        addActive(card);
+      }, { passive: true });
+    });
+    ['touchend', 'touchcancel'].forEach(evt => {
+      document.body.addEventListener(evt, (e) => {
+        const card = findCard(e.target);
+        // small delay to allow visual feedback
+        setTimeout(() => removeActive(card), 120);
+      }, { passive: true });
+    });
+    // On scroll or resize, clear any leftover states
+    ['scroll', 'resize'].forEach(evt => {
+      window.addEventListener(evt, () => {
+        document.querySelectorAll('.card.is-touch-active, .step-card.is-touch-active').forEach(el => el.classList.remove('is-touch-active'));
+      });
+    });
+  };
+  enableTouchHover();
+
   const content = {
     id: {
       // nav

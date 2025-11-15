@@ -153,6 +153,23 @@ body {
   box-shadow: 0 0 0 3px rgba(var(--hover-accent-rgb), 0.25);
 }
 
+/* Touch support: apply hover-like styles when tapped on mobile */
+@media (hover: none), (pointer: coarse) {
+  .step-card:active,
+  .step-card.is-touch-active {
+    background: linear-gradient(0deg, rgba(var(--hover-accent-rgb), 0.08), rgba(var(--hover-accent-rgb), 0.08));
+    border-color: rgba(var(--hover-accent-rgb), 0.35);
+    box-shadow: 0 12px 36px rgba(31, 41, 55, 0.12);
+    transform: translateY(-2px);
+  }
+  .step-card:active .step-icon,
+  .step-card.is-touch-active .step-icon { color: var(--hover-accent); }
+  .step-card:active .step-text,
+  .step-card.is-touch-active .step-text { color: var(--text-900); }
+  .step-card:active .step-number,
+  .step-card.is-touch-active .step-number { box-shadow: 0 0 0 3px rgba(var(--hover-accent-rgb), 0.25); }
+}
+
 /* Story */
 .story-section {
   background: linear-gradient(180deg, rgba(203, 232, 182, 0.16) 0%, rgba(126, 217, 227, 0.16) 100%);
@@ -269,6 +286,23 @@ footer {
 .card:focus-within .card-text,
 .card:focus-within .price {
   color: var(--text-900);
+}
+
+/* Touch support: hover-like styles on tap */
+@media (hover: none), (pointer: coarse) {
+  .card:active,
+  .card.is-touch-active {
+    background: linear-gradient(0deg, rgba(var(--hover-accent-rgb), 0.08), rgba(var(--hover-accent-rgb), 0.08));
+    border-color: rgba(var(--hover-accent-rgb), 0.3);
+    box-shadow: 0 14px 40px rgba(31, 41, 55, 0.12);
+    transform: translateY(-2px);
+  }
+  .card:active .card-title,
+  .card:active .card-text,
+  .card:active .price,
+  .card.is-touch-active .card-title,
+  .card.is-touch-active .card-text,
+  .card.is-touch-active .price { color: var(--text-900); }
 }
 
 /* Mobile layout refinements */
