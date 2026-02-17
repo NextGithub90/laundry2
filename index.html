@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>dr.water — Air Murni untuk Semua</title>
+    <title>dr.water — Air Minum yang Jelas Prosesnya</title>
     <meta name="description"
-        content="dr.water: Air panas & dingin sepuasnya, gratis selama setahun. Beli tumbler dan isi di titik refill terdekat." />
+        content="dr.water: Air minum RO + Mineral yang diproses secara higienis, dicek ke Labkesda secara berkala, dan dikelola dengan sistem profesional." />
 
     <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
 
     <!-- Bootstrap & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logo.png?v=3" />
     <link rel="shortcut icon" type="image/png" sizes="64x64" href="assets/img/logo.png?v=3" />
@@ -27,513 +27,572 @@
     <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body style="overflow-x:hidden ;">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<body>
+    <!-- ═══════════════════════════════════════
+         NAVBAR
+         ═══════════════════════════════════════ -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
                 <img src="assets/img/logo.png" alt="dr.water" class="navbar-logo" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="#why" data-key="nav.why">Kenapa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how" data-key="nav.how">Cara Kerja</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#buy" data-key="nav.buy">Beli Tumbler</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#locations" data-key="nav.locations">Titik Refill</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#partnership"
-                            data-key="nav.partnership">Kemitraan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about" data-key="nav.about">Tentang</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog" data-key="nav.blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" data-key="nav.contact">Kontak & FAQ</a>
-                    </li>
-                    <li class="nav-item dropdown ms-lg-3">
-                        <a class="btn btn-outline-primary dropdown-toggle" href="#" id="languageSwitcher" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Bahasa
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageSwitcher">
-                            <li><a class="dropdown-item" href="#" data-lang="id">Indonesia</a></li>
-                            <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
-                        </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="#why">Kenapa dr.water</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Produk Air</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quality">Kualitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tumbler">Tumbler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#partnership">Kemitraan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link nav-cta nav-cta-primary" href="#cta-final">Hubungi Kami</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section id="home" class="hero-section pt-6 pb-5">
+    <!-- ═══════════════════════════════════════
+         1. HERO SECTION
+         ═══════════════════════════════════════ -->
+    <section id="home" class="hero-section pt-6">
         <div class="container">
-            <div class="row align-items-center g-4">
+            <div class="row align-items-center g-5">
                 <div class="col-12 col-lg-6" data-aos="fade-up">
-                    <h1 class="display-5 fw-bold mb-3" data-key="hero.title">Air Panas & Dingin Sepuasnya. Gratis Selama
-                        Setahun.</h1>
-                    <p class="lead mb-4" data-key="hero.subtitle">Cukup beli tumbler dr.water — isi air murni panas atau
-                        dingin di titik refill mana pun tanpa biaya tambahan.</p>
-                    <div class="d-flex flex-wrap gap-2">
-                        <a href="#buy" class="btn btn-primary btn-lg bu" data-key="hero.btn.buy">Beli Tumbler
-                            Sekarang</a>
-                        <a href="#locations" class="btn btn-outline-primary btn-lg bu" data-key="hero.btn.map">Lihat
-                            Titik
-                            Refill</a>
+                    <div class="pill pill-sky mb-3">
+                        <i class="bi bi-droplet-fill"></i> RO + Mineral Terpercaya
+                    </div>
+                    <h1 class="mb-3">Air Minum yang <span>Jelas Prosesnya</span></h1>
+                    <p class="lead mb-4">
+                        Air minum RO + Mineral yang diproses secara higienis,
+                        dicek ke Labkesda secara berkala, dan dikelola dengan sistem profesional.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#products" class="btn-drw-primary" id="hero-cta-refill">
+                            <i class="bi bi-droplet-half me-1"></i> Isi Ulang Air
+                        </a>
+                        <a href="#partnership" class="btn-drw-outline" id="hero-cta-mitra">
+                            <i class="bi bi-people me-1"></i> Jadi Mitra Usaha
+                        </a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6" data-aos="fade-up">
-                    <div class="hero-image-wrap">
-                        <img class="img-fluid rounded-4 shadow-lg hero-image"
-                            alt="Pengguna mengisi air di stasiun refill dr.water" src="assets/img/hero.jpg"
-                            referrerpolicy=" no-referrer" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us -->
-    <section id="about" class="section-padding bg-white">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h2 class="section-title" data-key="about.title">Tentang Kami</h2>
-                    <p class="text-muted" data-key="about.subtitle">Membangun kepercayaan dan nilai kemanusiaan. Tone
-                        jujur, hangat, inspiratif.</p>
-                </div>
-            </div>
-            <div class="row align-items-center g-4">
-                <div class="col-12 col-lg-6" data-aos="zoom-in">
-                    <img class="img-fluid rounded-4 shadow" alt="Tim teknisi dan pengguna di lapangan"
-                        src="assets/img/vid.gif" referrerpolicy="no-referrer" />
-                </div>
-                <div class="col-12 col-lg-6" data-aos="fade-up">
-                    <blockquote class="about-quote" data-key="about.body">“dr.water lahir dari keresahan sederhana:
-                        mengapa air bersih semakin mahal di kota sebesar Jakarta? Kami percaya air murni harus bisa
-                        diakses semua orang — tanpa galon mahal, tanpa plastik, tanpa ribet.”</blockquote>
-                    <p class="about-light" data-key="about.light">1 tumbler = 300 botol plastik yang tidak terbuang.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why dr.water -->
-    <section id="why" class="section-padding bg-white">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h2 class="section-title" data-key="why.title">Kenapa dr.water</h2>
-                </div>
-            </div>
-            <div class="row g-3">
-                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in">
-                    <div class="card feature-card h-100">
-                        <div class="card-body">
-                            <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
-                            <h5 class="card-title" data-key="why.safe.title">Air Murni Aman & Sehat</h5>
-                            <p class="card-text" data-key="why.safe.body">Disaring dengan teknologi RO + UV agar air
-                                selalu bersih.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
-                    <div class="card feature-card h-100">
-                        <div class="card-body">
-                            <div class="feature-icon"><i class="bi bi-thermometer-half"></i></div>
-                            <h5 class="card-title" data-key="why.hotcold.title">Air Panas & Dingin</h5>
-                            <p class="card-text" data-key="why.hotcold.body">Bisa langsung seduh kopi, teh, atau mie.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card feature-card h-100">
-                        <div class="card-body">
-                            <div class="feature-icon"><i class="bi bi-gift"></i></div>
-                            <h5 class="card-title" data-key="why.free.title">Gratis 1 Tahun</h5>
-                            <p class="card-text" data-key="why.free.body">Bayar sekali untuk tumbler, isi sepuasnya
-                                selama 12 bulan.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
-                    <div class="card feature-card h-100">
-                        <div class="card-body">
-                            <div class="feature-icon"><i class="bi bi-recycle"></i></div>
-                            <h5 class="card-title" data-key="why.eco.title">Ramah Lingkungan</h5>
-                            <p class="card-text" data-key="why.eco.body">Kurangi limbah botol plastik sekali pakai.</p>
-                        </div>
+                <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="hero-image-wrap float-anim">
+                        <img src="assets/img/hero.jpg" alt="Outlet dr.water — air minum higienis" loading="eager" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog / Stories -->
-    <section id="blog" class="section-padding">
+    <!-- ═══════════════════════════════════════
+         2. TRUST POINTS / QUICK VALUE
+         ═══════════════════════════════════════ -->
+    <section id="why" class="trust-section section-padding">
         <div class="container">
-            <div class="row mb-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h2 class="section-title" data-key="blog.title">Blog & Cerita</h2>
-                    <p class="text-muted" data-key="blog.subtitle">Ruang edukasi, cerita komunitas, dan insight
-                        teknologi.</p>
-                </div>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Kenapa <span class="text-gradient">dr.water</span>?</h2>
+                <p class="section-subtitle mx-auto">Kualitas air yang bisa dipertanggungjawabkan.</p>
             </div>
-            <div class="d-flex flex-wrap gap-2 mb-3" data-aos="fade-up">
-                <span class="badge category" data-key="blog.cat.water">Air & Kesehatan</span>
-                <span class="badge category" data-key="blog.cat.eco">Gaya Hidup Hijau</span>
-                <span class="badge category" data-key="blog.cat.tech">Teknologi</span>
-                <span class="badge category" data-key="blog.cat.partner">Cerita Mitra</span>
-            </div>
-            <div class="row g-3">
-                <div class="col-12 col-md-6" data-aos="fade-up">
-                    <div class="card blog-card h-100">
-                        <img class="card-img-top" alt="Artikel dr.water"
-                            src="https://images.unsplash.com/photo-1516156004284-290246c1b6cd?q=80&w=1600&auto=format&fit=crop"
-                            referrerpolicy="no-referrer" />
-                        <div class="card-body">
-                            <h5 class="card-title" data-key="blog.article1.title">Kenapa air gratis setahun bisa
-                                terwujud?</h5>
-                            <p class="card-text" data-key="blog.article1.desc">Model operasional, jaringan refill, dan
-                                teknologi pemurnian membuatnya mungkin.</p>
-                            <a href="#" class="btn btn-outline-primary" data-key="blog.read">Baca Selengkapnya</a>
+            <div class="row g-4">
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                    <div class="trust-card">
+                        <div class="trust-icon trust-icon-blue">
+                            <i class="bi bi-moisture"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
-                    <div class="card blog-card h-100">
-                        <img class="card-img-top" alt="Cerita mitra dr.water"
-                            src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=1600&auto=format&fit=crop"
-                            referrerpolicy="no-referrer" />
-                        <div class="card-body">
-                            <h5 class="card-title" data-key="blog.article2.title">Cerita mitra pertama di Jakarta
-                                Selatan</h5>
-                            <p class="card-text" data-key="blog.article2.desc">Bagaimana sebuah kios kecil menjadi pusat
-                                akses air murni warga.</p>
-                            <a href="#" class="btn btn-outline-primary" data-key="blog.read">Baca Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- How It Works -->
-    <section id="how" class="section-padding">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h2 class="section-title" data-key="how.title">Cara Kerja</h2>
-                </div>
-            </div>
-            <div class="row g-3 text-center">
-                <div class="col-6 col-lg-3" data-aos="fade-up">
-                    <div class="step-card h-100 p-3">
-                        <div class="step-number">1</div>
-                        <div class="step-icon"><i class="bi bi-cup-hot"></i></div>
-                        <p class="step-text" data-key="how.step1">Beli tumbler dr.water</p>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
-                    <div class="step-card h-100 p-3">
-                        <div class="step-number">2</div>
-                        <div class="step-icon"><i class="bi bi-qr-code"></i></div>
-                        <p class="step-text" data-key="how.step2">Aktivasi kode QR di website atau aplikasi</p>
+                        <h5>RO + Mineral</h5>
+                        <p>Air disaring dengan teknologi RO dan ditambahkan mineral terukur.</p>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="step-card h-100 p-3">
-                        <div class="step-number">3</div>
-                        <div class="step-icon"><i class="bi bi-geo-alt"></i></div>
-                        <p class="step-text" data-key="how.step3">Isi ulang di titik refill terdekat</p>
+                    <div class="trust-card">
+                        <div class="trust-icon trust-icon-blue">
+                            <i class="bi bi-clipboard2-check"></i>
+                        </div>
+                        <h5>Uji Labkesda Berkala</h5>
+                        <p>Kualitas air diperiksa secara rutin untuk memastikan keamanan.</p>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
-                    <div class="step-card h-100 p-3">
-                        <div class="step-number">4</div>
-                        <div class="step-icon"><i class="bi bi-droplet"></i></div>
-                        <p class="step-text" data-key="how.step4">Nikmati air panas atau dingin kapan pun</p>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-card">
+                        <div class="trust-icon trust-icon-blue">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h5>Proses Higienis</h5>
+                        <p>Mesin dan galon dibersihkan dan dirawat secara berkala.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trust-card">
+                        <div class="trust-icon trust-icon-blue">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h5>Sistem Terpantau</h5>
+                        <p>Proses produksi air dikelola dengan standar operasional yang jelas.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Story -->
-    <section class="section-padding story-section">
+    <!-- ═══════════════════════════════════════
+         3. B2C — AIR MINUM UNTUK KONSUMSI HARIAN
+         ═══════════════════════════════════════ -->
+    <section id="products" class="b2c-section section-padding">
         <div class="container">
-            <div class="row align-items-center g-4">
-                <div class="col-12 col-lg-6" data-aos="zoom-in">
-                    <img class="img-fluid rounded-4 shadow" alt="Keluarga menikmati air minum di rumah"
-                        src="https://images.unsplash.com/photo-1596734739095-b1b08f2e0404?q=80&w=1600&auto=format&fit=crop"
-                        referrerpolicy="no-referrer" />
-                </div>
-                <div class="col-12 col-lg-6" data-aos="fade-up">
-                    <h3 class="mb-3" data-key="story.title">Cerita Air Bersih untuk Semua</h3>
-                    <p class="fs-5" data-key="story.body">“Kami percaya air bersih dan sehat adalah hak dasar, bukan
-                        kemewahan. Dengan dr.water, siapapun bisa menikmati air murni panas atau dingin — gratis, sehat,
-                        dan tanpa ribet.”</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Buy Tumbler -->
-    <section id="buy" class="section-padding bg-white">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h2 class="section-title" data-key="buy.title">Beli Tumbler</h2>
-                    <p class="text-muted" data-key="buy.subtitle">Fokus pada kejelasan harga dan manfaat air gratis
-                        setahun.</p>
-                </div>
-            </div>
-            <div class="row g-3">
-                <div class="col-12 col-md-4" data-aos="fade-up">
-                    <div class="card product-card h-100">
-                        <div class="position-relative">
-                            <img class="card-img-top" alt="dr.water Go 500ml" src="assets/img/produk3.jpg"
-                                referrerpolicy="no-referrer" />
-
-                            <span class="badge badge-free" data-key="buy.badge">Gratis 1 Tahun</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title" data-key="buy.go.name">dr.water Go 500ml</h5>
-                            <p class="price" data-key="buy.go.price">Rp99.000</p>
-                            <p class="card-text" data-key="buy.go.desc">Ringan, praktis, cocok untuk pekerja lapangan
-                                dan ojol.</p>
-                            <a href="#" class="btn btn-primary w-100" data-key="buy.cta">Beli Sekarang</a>
-                        </div>
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6 order-lg-2" data-aos="fade-up">
+                    <div class="b2c-image-wrap">
+                        <img src="assets/img/about.jpeg" alt="Air minum dr.water untuk keluarga" loading="lazy" />
                     </div>
                 </div>
-                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
-                    <div class="card product-card h-100">
-                        <div class="position-relative">
-                            <img class="card-img-top" alt="dr.water Move 700ml" src="assets/img/produk1.jpg"
-                                referrerpolicy="no-referrer" />
-                            <span class="badge badge-free" data-key="buy.badge">Gratis 1 Tahun</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title" data-key="buy.move.name">dr.water Move 700ml</h5>
-                            <p class="price" data-key="buy.move.price">Rp129.000</p>
-                            <p class="card-text" data-key="buy.move.desc">Untuk mahasiswa dan pekerja aktif, tahan panas
-                                dan dingin.</p>
-                            <a href="#" class="btn btn-primary w-100" data-key="buy.cta">Beli Sekarang</a>
-                        </div>
+                <div class="col-12 col-lg-6 order-lg-1 b2c-content" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pill pill-sky mb-3">
+                        <i class="bi bi-house-heart"></i> Untuk Konsumsi Harian
                     </div>
-                </div>
-                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card product-card h-100">
-                        <div class="position-relative">
-                            <img class="card-img-top" alt="dr.water Family 1L" src="assets/img/produk2.jpg"
-                                referrerpolicy="no-referrer" />
-                            <span class="badge badge-free" data-key="buy.badge">Gratis 1 Tahun</span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title" data-key="buy.family.name">dr.water Family 1L</h5>
-                            <p class="price" data-key="buy.family.price">Rp149.000</p>
-                            <p class="card-text" data-key="buy.family.desc">Kapasitas besar untuk rumah dan keluarga
-                                kecil.</p>
-                            <a href="#" class="btn btn-primary w-100" data-key="buy.cta">Beli Sekarang</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="mt-3 text-muted" data-key="buy.note">Semua harga sudah termasuk akses refill air murni panas &
-                dingin gratis selama 1 tahun.</p>
-        </div>
-    </section>
-
-    <!-- Locations -->
-    <section id="locations" class="section-padding">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h2 class="section-title" data-key="locations.title">Titik Refill dr.water</h2>
-                    <p class="text-muted" data-key="locations.subtitle">Isi air murni panas & dingin di titik dr.water
-                        terdekat. Tersedia di area padat penduduk, kos, dan kawasan ramai.</p>
-                </div>
-            </div>
-            <div class="row g-3 align-items-stretch">
-                <div class="col-12 col-lg-6" data-aos="zoom-in">
-                    <img class="img-fluid rounded-4 shadow" alt="Peta lokasi kota" src="assets/img/maps.jpg"
-                        referrerpolicy="no-referrer" />
-                </div>
-                <div class="col-12 col-lg-6" data-aos="fade-up">
-                    <ul class="list-group list-group-flush location-list">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Jakarta — Kemang, Tebet, Kuningan
-                            <span class="badge bg-primary">Open</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Bandung — Dago, Buah Batu, Cicendo
-                            <span class="badge bg-primary">Open</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Surabaya — Darmo, Tunjungan, Manyar
-                            <span class="badge bg-primary">Open</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Yogyakarta — Gejayan, Kaliurang, Seturan
-                            <span class="badge bg-primary">Open</span>
-                        </li>
+                    <h3 class="mb-3">Air Minum untuk Konsumsi Harian</h3>
+                    <p>
+                        dr.water menyediakan air minum yang aman dan konsisten untuk kebutuhan sehari-hari keluarga
+                        Anda.
+                    </p>
+                    <p class="fw-semibold mb-2">Tersedia pilihan:</p>
+                    <ul class="mb-3">
+                        <li>Isi ulang galon RO</li>
+                        <li>Isi ulang galon RO + Mineral</li>
+                        <li>Air minum menggunakan tumbler dr.water</li>
                     </ul>
-                    <div class="d-flex gap-2 mt-3">
-                        <a href="#" class="btn btn-outline-primary" data-key="locations.cta.map">Lihat Peta Lokasi</a>
-                        <a href="#partnership" class="btn btn-primary" data-key="locations.cta.partner">Ingin buka titik
-                            refill? Lihat Kemitraan</a>
+                    <p class="text-muted fst-italic">Minum lebih tenang karena kualitas airnya terpantau.</p>
+                    <a href="#tumbler" class="btn-drw-dark mt-2 d-inline-block">
+                        <i class="bi bi-water me-1"></i> Lihat Produk Air Minum
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         4. QUALITY & PROCESS
+         ═══════════════════════════════════════ -->
+    <section id="quality" class="quality-section section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-5" data-aos="fade-up">
+                    <h2 class="section-title">Kualitas Air yang Bisa Dijelaskan</h2>
+                    <p class="section-subtitle mb-4">Setiap tetes air dr.water melalui proses yang terkontrol.</p>
+
+                    <div class="d-flex flex-column gap-3 mb-4">
+                        <div class="process-step" data-aos="fade-up" data-aos-delay="50">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h6>Air diproses dengan mesin Reverse Osmosis (RO)</h6>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h6>Mesin dan galon dibersihkan secara rutin</h6>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-up" data-aos-delay="150">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h6>Sampel air diuji ke Labkesda</h6>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h6>Pengecekan dilakukan secara berkala</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="quality-closing">"Karena air minum harus aman, bukan sekadar murah."</p>
+                </div>
+                <div class="col-12 col-lg-7" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="quality-img-wrap">
+                                <img src="assets/img/hasilPremiksaanKimia.jpeg"
+                                    alt="Hasil pemeriksaan kimia air dr.water" class="clickable-img" loading="lazy" />
+                            </div>
+                            <p class="text-center mt-2" style="color:rgba(255,255,255,0.5); font-size:0.82rem;">Hasil
+                                Pemeriksaan Kimia Air dr.water</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Partnership -->
-    <section id="partnership" class="section-padding bg-white">
+    <!-- ═══════════════════════════════════════
+         5. KEMITRAAN (B2B)
+         ═══════════════════════════════════════ -->
+    <section id="partnership" class="partnership-section section-padding">
         <div class="container">
-            <div class="row mb-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h2 class="section-title" data-key="partnership.title">Kemitraan</h2>
-                    <p class="text-muted" data-key="partnership.subtitle">Jelaskan dua jalur utama: mitra lokasi kecil
-                        dan lisensi regional.</p>
-                </div>
-            </div>
-            <div class="row g-3">
-                <div class="col-12 col-lg-6" data-aos="fade-up">
-                    <div class="card h-100 partner-card">
-                        <img class="card-img-top" alt="Kios kecil dengan mesin refill" src="assets/img/partner1.jpeg"
-                            referrerpolicy="no-referrer" />
-                        <div class="card-body">
-                            <h5 class="card-title" data-key="partner.small.title">Mitra Lokasi Kecil</h5>
-                            <p class="card-text" data-key="partner.small.desc">“Punya lahan kecil atau kios di area
-                                ramai? Jadilah bagian dari gerakan air bersih dr.water. dr.water sediakan mesin &
-                                sistem, kamu sediakan lahan & listrik. Bagi hasil ringan, dengan dukungan promosi dari
-                                pusat.”</p>
-                            <a href="#" class="btn btn-primary" data-key="partner.small.cta">Daftar Jadi Mitra</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="50">
-                    <div class="card h-100 partner-card">
-                        <img class="card-img-top" alt="Kota dengan infrastruktur air" src="assets/img/partner2.jpeg"
-                            referrerpolicy="no-referrer" />
-                        <div class="card-body">
-                            <h5 class="card-title" data-key="partner.reg.title">Lisensi Regional</h5>
-                            <p class="card-text" data-key="partner.reg.desc">“Bawa gerakan air murni ke kotamu. Jadi
-                                pemegang lisensi resmi dr.water dengan hak distribusi & operasional penuh.”</p>
-                            <a href="#" class="btn btn-outline-primary" data-key="partner.reg.cta">Ajukan Lisensi
-                                Resmi</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact & FAQ -->
-    <section id="contact" class="section-padding bg-white">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12" data-aos="fade-up">
-                    <h2 class="section-title" data-key="contact.title">Kontak & FAQ</h2>
-                    <p class="text-muted" data-key="contact.subtitle">Ada pertanyaan? Hubungi kami via WhatsApp atau isi
-                        formulir di bawah.</p>
-                </div>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Kemitraan Usaha Air Isi Ulang <span class="text-gradient">dr.water</span></h2>
+                <p class="section-subtitle mx-auto">Ingin buka usaha air isi ulang tanpa ribet?
+                    dr.water menyediakan sistem, standar, dan pendampingan untuk mitra.</p>
             </div>
             <div class="row g-4">
-                <div class="col-12 col-lg-5" data-aos="fade">
-                    <div class="contact-card p-3">
-                        <form class="needs-validation" novalidate>
-                            <div class="mb-3">
-                                <label class="form-label" for="name" data-key="contact.form.name">Nama</label>
-                                <input id="name" type="text" class="form-control" placeholder="Nama lengkap" required />
+                <div class="col-12 col-lg-6" data-aos="fade-up">
+                    <div class="partnership-card">
+                        <img src="assets/img/partner1.jpeg" class="card-img-top" alt="Outlet mitra dr.water"
+                            loading="lazy" />
+                        <div class="card-body">
+                            <h5 class="mb-3"><i class="bi bi-box-seam text-primary me-2"></i>Apa yang Mitra Dapatkan
+                            </h5>
+                            <ul class="benefit-list mb-3">
+                                <li>Mesin RO standar dr.water</li>
+                                <li>Panduan operasional & kebersihan</li>
+                                <li>Branding outlet yang modern & rapi</li>
+                                <li>Jadwal pengecekan kualitas air berkala</li>
+                                <li>Dukungan dan pendampingan usaha</li>
+                            </ul>
+                            <p class="fw-bold mb-2" style="color:var(--navy);">Cocok untuk:</p>
+                            <div class="d-flex flex-wrap gap-1 mb-3">
+                                <span class="target-list">
+                                    <li>Pemula usaha</li>
+                                </span>
+                                <span class="target-list">
+                                    <li>Tambahan usaha keluarga</li>
+                                </span>
+                                <span class="target-list">
+                                    <li>Area perumahan, kos, ruko</li>
+                                </span>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="email" data-key="contact.form.email">Email</label>
-                                <input id="email" type="email" class="form-control" placeholder="name@example.com"
-                                    required />
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="message" data-key="contact.form.message">Pesan</label>
-                                <textarea id="message" rows="4" class="form-control"
-                                    placeholder="Tulis pertanyaan atau kebutuhan Anda" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100"
-                                data-key="contact.form.submit">Kirim</button>
-                        </form>
+                            <a href="#cta-final" class="btn-drw-primary d-inline-block" id="cta-partnership">
+                                <i class="bi bi-handshake me-1"></i> Pelajari Kemitraan
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-7" data-aos="fade-up">
-                    <div class="accordion" id="faqAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="faq1Heading">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1"
-                                    data-key="faq.q1">Apakah airnya benar-benar gratis?</button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Heading"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body" data-key="faq.a1">Ya, gratis selama 12 bulan setelah
-                                    aktivasi tumbler. Berlaku di titik refill dr.water yang tersedia.</div>
+                <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="partnership-card">
+                        <img src="assets/img/partner2.jpeg" class="card-img-top" alt="Proyeksi keuangan dr.water"
+                            loading="lazy" />
+                        <div class="card-body">
+                            <h5 class="mb-3"><i class="bi bi-graph-up-arrow text-primary me-2"></i>Proyeksi Keuangan
+                                Mitra</h5>
+                            <p style="color:var(--text-500);">Data proyeksi keuangan untuk mitra dr.water. Analisis ini
+                                menunjukkan potensi keuntungan yang bisa diperoleh dari usaha air isi ulang.</p>
+                            <div class="quality-img-wrap mt-3" style="border:1px solid var(--border);">
+                                <img src="assets/img/ProyeksiKeuangan.jpeg" alt="Proyeksi keuangan mitra dr.water"
+                                    class="clickable-img" loading="lazy" />
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="faq2Heading">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2"
-                                    data-key="faq.q2">Bagaimana perpanjangan setelah setahun?</button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Heading"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body" data-key="faq.a2">Anda dapat memperpanjang akses dengan
-                                    biaya ringan melalui website atau aplikasi resmi dr.water.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="faq3Heading">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3"
-                                    data-key="faq.q3">Bisa refill di luar Jakarta?</button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Heading"
-                                data-bs-parent="#faqAccordion">
-                                <div class="accordion-body" data-key="faq.a3">Jaringan kami terus berkembang. Cek peta
-                                    lokasi di website untuk area yang tersedia.</div>
-                            </div>
+                            <p class="text-center mt-2" style="color:var(--text-300); font-size:0.82rem;">Proyeksi
+                                Keuangan Mitra dr.water</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer -->
-    <footer class="py-4 border-top bg-white">
-        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2">
-            <div class="text-muted" data-key="footer.tagline">dr.water — Air Murni untuk Semua.</div>
-            <!-- <div class="small d-flex align-items-center gap-3">
-                <span class="text-muted" data-key="footer.copy">© 2025 dr.water Indonesia</span>
-                <a class="text-decoration-none" href="#" data-key="footer.privacy">Kebijakan Privasi</a>
-                <a class="text-decoration-none" href="#" data-key="footer.terms">Syarat & Ketentuan</a>
-            </div> -->
+
+    <!-- ═══════════════════════════════════════
+         6. TUMBLER / LIFESTYLE PRODUCT
+         ═══════════════════════════════════════ -->
+    <section id="tumbler" class="tumbler-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Tumbler <span class="text-gradient">dr.water</span></h2>
+                <p class="section-subtitle mx-auto">Bukan sekadar wadah minum.
+                    Tumbler dr.water dirancang untuk menjaga air tetap bersih dan praktis digunakan setiap hari.</p>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <span class="pill pill-sky"><i class="bi bi-check-circle"></i> Aman & nyaman</span>
+                    <span class="pill pill-sky"><i class="bi bi-palette"></i> Desain modern</span>
+                    <span class="pill pill-sky"><i class="bi bi-heart"></i> Gaya hidup sehat</span>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Product 1: HydroElite -->
+                <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="product-card">
+                        <div class="img-wrap">
+                            <span class="product-badge">Best Seller</span>
+                            <img src="assets/img/HydroElite.jpeg" class="card-img-top" alt="Dr.Water HydroElite"
+                                loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5>Dr.Water HydroElite</h5>
+                            <p class="product-price">Rp 129.000</p>
+                            <p class="card-text">Desain elegan, cocok untuk aktivitas sehari-hari.</p>
+                            <a href="#" class="btn-drw-primary d-block text-center btn-buy-tumbler"
+                                data-product="Dr.Water HydroElite - Rp129.000">
+                                <i class="bi bi-bag me-1"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2: PureOrigin -->
+                <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="product-card">
+                        <div class="img-wrap">
+                            <img src="assets/img/PureOrigin.jpeg" class="card-img-top" alt="Dr.Water PureOrigin"
+                                loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5>Dr.Water PureOrigin</h5>
+                            <p class="product-price">Rp 99.000</p>
+                            <p class="card-text">Ringan dan praktis untuk dibawa ke mana saja.</p>
+                            <a href="#" class="btn-drw-primary d-block text-center btn-buy-tumbler"
+                                data-product="Dr.Water PureOrigin - Rp99.000">
+                                <i class="bi bi-bag me-1"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3: PureVista -->
+                <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="img-wrap">
+                            <img src="assets/img/PureVista.jpeg" class="card-img-top" alt="Dr.Water PureVista"
+                                loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5>Dr.Water PureVista</h5>
+                            <p class="product-price">Rp 129.000</p>
+                            <p class="card-text">Tampilan modern dengan kapasitas optimal.</p>
+                            <a href="#" class="btn-drw-primary d-block text-center btn-buy-tumbler"
+                                data-product="Dr.Water PureVista - Rp129.000">
+                                <i class="bi bi-bag me-1"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4: CrystalFlow -->
+                <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="product-card">
+                        <div class="img-wrap">
+                            <img src="assets/img/CrystalFlow.jpeg" class="card-img-top" alt="Dr.Water CrystalFlow"
+                                loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5>Dr.Water CrystalFlow</h5>
+                            <p class="product-price">Rp 129.000</p>
+                            <p class="card-text">Dirancang untuk kenyamanan genggaman tangan.</p>
+                            <a href="#" class="btn-drw-primary d-block text-center btn-buy-tumbler"
+                                data-product="Dr.Water CrystalFlow - Rp129.000">
+                                <i class="bi bi-bag me-1"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5: PrimeHydra -->
+                <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="img-wrap">
+                            <span class="product-badge">Premium</span>
+                            <img src="assets/img/PrimeHydra.jpeg" class="card-img-top" alt="Dr.Water PrimeHydra"
+                                loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5>Dr.Water PrimeHydra</h5>
+                            <p class="product-price">Rp 169.000</p>
+                            <p class="card-text">Kapasitas lebih besar, cocok untuk perjalanan jauh.</p>
+                            <a href="#" class="btn-drw-primary d-block text-center btn-buy-tumbler"
+                                data-product="Dr.Water PrimeHydra - Rp169.000">
+                                <i class="bi bi-bag me-1"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6: HydroSignature -->
+                <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                    <div class="product-card">
+                        <div class="img-wrap">
+                            <span class="product-badge">Premium</span>
+                            <img src="assets/img/HydroSignature.jpeg" class="card-img-top" alt="Dr.Water HydroSignature"
+                                loading="lazy" />
+                        </div>
+                        <div class="card-body">
+                            <h5>Dr.Water HydroSignature</h5>
+                            <p class="product-price">Rp 169.000</p>
+                            <p class="card-text">Desain signature eksklusif dengan material premium.</p>
+                            <a href="#" class="btn-drw-primary d-block text-center btn-buy-tumbler"
+                                data-product="Dr.Water HydroSignature - Rp169.000">
+                                <i class="bi bi-bag me-1"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4" data-aos="fade-up">
+                <p class="tumbler-tagline">"Minum air bersih, pakai wadah yang layak."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         7. OUTLET EXPERIENCE
+         ═══════════════════════════════════════ -->
+    <section id="outlet" class="outlet-section section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6" data-aos="fade-up">
+                    <div class="outlet-img-wrap">
+                        <img src="assets/img/partner1.jpeg" alt="Outlet bersih dr.water" loading="lazy" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pill pill-sky mb-3">
+                        <i class="bi bi-shop"></i> Pengalaman di Outlet
+                    </div>
+                    <h2 class="section-title">Outlet Bersih & Profesional</h2>
+                    <p class="section-subtitle mb-4">
+                        Saat Anda datang ke outlet dr.water, Anda akan melihat:
+                    </p>
+                    <ul class="outlet-features mb-4">
+                        <li><i class="bi bi-brightness-high"></i> Area yang bersih dan terang</li>
+                        <li><i class="bi bi-gear-wide-connected"></i> Mesin air terlihat jelas</li>
+                        <li><i class="bi bi-info-circle"></i> Informasi kualitas air</li>
+                        <li><i class="bi bi-cup-straw"></i> Display produk tumbler</li>
+                    </ul>
+                    <p class="fst-italic" style="color:var(--text-500);">
+                        "Kami ingin kepercayaan pelanggan terlihat sejak pertama datang."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         8. BRAND STORY (SINGKAT)
+         ═══════════════════════════════════════ -->
+    <section id="about" class="brand-section section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6" data-aos="fade-up">
+                    <h2 class="section-title">Tentang <span style="color:var(--sky-light);">dr.water</span></h2>
+                    <p style="color:rgba(255,255,255,0.7); font-size:1.05rem; line-height:1.8;" class="mb-4">
+                        dr.water dikelola dengan sistem kebersihan dan pengelolaan usaha yang terinspirasi
+                        dari pengalaman dr.laundry dalam menjalankan usaha higienis dan terkontrol.
+                    </p>
+                    <p style="color:rgba(255,255,255,0.6); font-size:0.95rem;" class="mb-4">
+                        Hal ini membuat dr.water fokus pada:
+                    </p>
+                    <div class="brand-values">
+                        <span class="brand-value-tag"><i class="bi bi-droplet-half"></i> Kebersihan</span>
+                        <span class="brand-value-tag"><i class="bi bi-arrow-repeat"></i> Konsistensi</span>
+                        <span class="brand-value-tag"><i class="bi bi-shield-lock"></i> Kepercayaan Pelanggan</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="quality-img-wrap">
+                        <img src="assets/img/about.jpeg" alt="Tentang dr.water" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         9. FINAL CTA
+         ═══════════════════════════════════════ -->
+    <section id="cta-final" class="final-cta-section">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-3">Siap Minum Air yang Lebih Aman?</h2>
+            <p class="mb-4">Atau Siap Buka Usaha Air Isi Ulang?</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#" class="btn-drw-dark" id="cta-refill-bottom">
+                    <i class="bi bi-droplet-fill me-1"></i> Isi Ulang Air Sekarang
+                </a>
+                <a href="#" class="btn-drw-outline" id="cta-mitra-bottom"
+                    style="border-color:rgba(255,255,255,0.5); color:#fff;">
+                    <i class="bi bi-people-fill me-1"></i> Gabung Kemitraan dr.water
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         10. FOOTER
+         ═══════════════════════════════════════ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <img src="assets/img/logo.png" alt="dr.water" class="footer-logo" />
+                    <p class="footer-brand-text">
+                        dr.water — Air minum yang jelas prosesnya. Dikelola dengan sistem profesional
+                        untuk memberikan air minum yang aman dan konsisten.
+                    </p>
+                    <div class="footer-social mt-3">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Tentang</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">Tentang dr.water</a></li>
+                        <li><a href="#quality">Kualitas Air</a></li>
+                        <li><a href="#outlet">Outlet Kami</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Produk</h5>
+                    <ul class="footer-links">
+                        <li><a href="#products">Produk Air</a></li>
+                        <li><a href="#tumbler">Tumbler</a></li>
+                        <li><a href="#tumbler">Koleksi Lengkap</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Kemitraan</h5>
+                    <ul class="footer-links">
+                        <li><a href="#partnership">Jadi Mitra</a></li>
+                        <li><a href="#partnership">Info Kemitraan</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Kontak</h5>
+                    <ul class="footer-links">
+                        <li><a href="#" id="footer-wa"><i class="bi bi-whatsapp me-1"></i> WhatsApp</a></li>
+                        <li><a href="#" id="footer-email"><i class="bi bi-envelope me-1"></i> Email</a></li>
+                    </ul>
+                    <h5 class="mt-3">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Sertifikasi</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0">© 2025 dr.water Indonesia. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-
-    <!-- Sticky Mobile CTA
-    <div class="sticky-cta d-lg-none">
-        <a href="#buy" class="btn btn-primary flex-grow-1" data-key="sticky.buy">Beli Tumbler</a>
-        <a href="#locations" class="btn btn-outline-primary flex-grow-1" data-key="sticky.map">Lihat Peta</a>
-    </div> -->
 
     <!-- WhatsApp Floating Button -->
     <button id="whatsapp-fab" class="whatsapp-fab" type="button" aria-label="Chat WhatsApp">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M20.52 3.48A10.46 10.46 0 0012 0C5.37 0 .09 5.28.09 11.9c0 2.1.55 4.15 1.62 5.94L0 24l6.28-1.64A10.48 10.48 0 0012 24c6.63 0 11.91-5.28 11.91-11.9 0-3.18-1.24-6.17-3.39-8.62zM12 21.5c-1.94 0-3.82-.57-5.43-1.64l-.39-.25-3.73.98 1-3.63-.26-.39A9.48 9.48 0 012.5 11.9C2.5 6.42 7.02 1.9 12.5 1.9s10 4.52 10 10-4.52 9.6-10 9.6z"/>
-            <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.86 1.21 3.06.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.08-.12-.28-.2-.57-.35z"/>
+            <path
+                d="M20.52 3.48A10.46 10.46 0 0012 0C5.37 0 .09 5.28.09 11.9c0 2.1.55 4.15 1.62 5.94L0 24l6.28-1.64A10.48 10.48 0 0012 24c6.63 0 11.91-5.28 11.91-11.9 0-3.18-1.24-6.17-3.39-8.62zM12 21.5c-1.94 0-3.82-.57-5.43-1.64l-.39-.25-3.73.98 1-3.63-.26-.39A9.48 9.48 0 012.5 11.9C2.5 6.42 7.02 1.9 12.5 1.9s10 4.52 10 10-4.52 9.6-10 9.6z" />
+            <path
+                d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.86 1.21 3.06.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.08-.12-.28-.2-.57-.35z" />
         </svg>
     </button>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTopBtn" class="scroll-top" type="button" aria-label="Scroll to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Image Lightbox Overlay -->
+    <div id="imgLightbox" class="img-lightbox-overlay">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img src="" alt="Preview" />
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
